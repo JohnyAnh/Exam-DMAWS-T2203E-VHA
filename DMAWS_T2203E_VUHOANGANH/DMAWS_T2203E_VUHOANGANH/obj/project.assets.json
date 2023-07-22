@@ -3916,11 +3916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/hoanganhvu/Projects/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH.csproj",
+      "projectUniqueName": "/Users/hoanganhvu/Desktop/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH.csproj",
       "projectName": "DMAWS_T2203E_VUHOANGANH",
-      "projectPath": "/Users/hoanganhvu/Projects/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH.csproj",
+      "projectPath": "/Users/hoanganhvu/Desktop/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH.csproj",
       "packagesPath": "/Users/hoanganhvu/.nuget/packages/",
-      "outputPath": "/Users/hoanganhvu/Projects/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/obj/",
+      "outputPath": "/Users/hoanganhvu/Desktop/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/hoanganhvu/.nuget/NuGet/NuGet.Config"

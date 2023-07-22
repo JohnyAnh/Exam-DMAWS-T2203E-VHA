@@ -24,6 +24,33 @@ namespace DMAWS_T2203E_VUHOANGANH.Controllers
         {
             return _context.Employees.ToList();
         }
+        // GET: api/Employees/Search/{searchString}/{dobFromDate}/{dobToDate}
+        [HttpGet("Search/{searchString}/{dobFromDate}/{dobToDate}")]
+        public ActionResult<IEnumerable<Employee>> SearchEmployees(string searchString, DateTime dobFromDate, DateTime dobToDate)
+        {
+            var employees = _context.Employees.Where(e =>
+                e.EmployeeName.Contains(searchString) &&
+                e.EmployeeDOB >= dobFromDate &&
+                e.EmployeeDOB <= dobToDate).ToList();
+
+            return employees;
+        }
+
+        // GET: api/Employees/Details/{id}
+        [HttpGet("Details/{id}")]
+        public ActionResult<Employee> GetEmployeeDetails(int id)
+        {
+            var employee = _context.Employees.Find(id);
+
+            if (employee == null)
+            {
+                return NotFound();
+            }
+
+            employee.ProjectEmployees = _context.ProjectEmployees.Where(pe => pe.EmployeeId == id).ToList();
+            return employee;
+        }
+
 
         // GET: api/Employees/5
         [HttpGet("{id}")]

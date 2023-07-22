@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dybwfyYgIZK84qvUJpRaJyBWXLlWh4Mxcz+na9cboszwDCaP79S+f0M0MPWETSNgsS4IKrgQi+x+zJ9jQN0phg==",
+  "dgSpecHash": "bjL6zQrPgwqxDayr44oW96knlkettZ6uHqbfh4/YVzQ0vKNg5VDneh16DoIin2TzPOCS713EkkgCAgNTX9SFXw==",
   "success": true,
-  "projectFilePath": "/Users/hoanganhvu/Projects/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH.csproj",
+  "projectFilePath": "/Users/hoanganhvu/Desktop/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH/DMAWS_T2203E_VUHOANGANH.csproj",
   "expectedPackageFiles": [
     "/Users/hoanganhvu/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/hoanganhvu/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",

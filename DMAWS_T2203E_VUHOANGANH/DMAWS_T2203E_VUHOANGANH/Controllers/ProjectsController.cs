@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DMAWS_T2203E_VUHOANGANH.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class ProjectsController : ControllerBase
@@ -16,6 +17,28 @@ namespace DMAWS_T2203E_VUHOANGANH.Controllers
         public ProjectsController(ApplicationDbContext context)
         {
             _context = context;
+        }
+        // GET: api/Projects/Search/{searchString}
+        [HttpGet("Search/{searchString}")]
+        public ActionResult<IEnumerable<Project>> SearchProjects(string searchString)
+        {
+            var projects = _context.Projects.Where(p => p.ProjectName.Contains(searchString)).ToList();
+            return projects;
+        }
+
+        // GET: api/Projects/Details/{id}
+        [HttpGet("Details/{id}")]
+        public ActionResult<Project> GetProjectDetails(int id)
+        {
+            var project = _context.Projects.Find(id);
+
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            project.ProjectEmployees = _context.ProjectEmployees.Where(pe => pe.ProjectId == id).ToList();
+            return project;
         }
 
         // GET: api/Projects
